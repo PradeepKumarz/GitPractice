@@ -1,4 +1,5 @@
 
+# Github learn 1
 # Connect to google docs spreadsheet via api
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -37,6 +38,7 @@ for word in defined:
 			toAudio += d + " " 
 	toAudio += "* " # Lets me put pauses between 2 words
 
+# Github learn 2
 
 toAudio = '                                                                    '.join(toAudio.split("*")) # Spacing is annoying
 
@@ -44,3 +46,5 @@ audio = gTTS(text=toAudio, lang='en', slow=False)
 
 # Save audio to an mp3 file
 audio.save("Vocab.mp3")
+
+# Github learn 3
